@@ -1,39 +1,41 @@
-# reason-refmt
+# linter-refmt
 
-_Use [refmt] to format your Reason code in Atom._
-
-[refmt]: https://facebook.github.io/reason/tools.html#refmt
+_Use [refmt] to display syntax error messages for your Reason code in Atom._
 
 
 ## Features
 
-* Format on save
-* Report formatting errors on the fly with [linter]
-* Convert between Reason and Ocaml code
-
-[linter]: https://atom.io/packages/linter
+* Report syntax errors on the fly with [linter] or [nuclide]'s linter
 
 
 ## Usage
 
-No default keybindings are provided, but they can be configured in your keymap.
-
-| Command                          | Description                            |
-| -------------------------------- | -------------------------------------- |
-| `reason-refmt:format`            | Format the active file                 |
-| `reason-refmt:convert-to-reason` | Convert an OCaml file to a Reason file |
-| `reason-refmt:convert-to-ocaml`  | Convert a Reason file to an OCaml file |
+Just install and enable the package
 
 
 ## Installation
 
-This package requires [language-reason] and [refmt]. For autocompletion, linting and other features, [ocaml-merlin] is recommended.
+This package requires [language-reason] and the latest version of the [reason-cli] tools.
 
+Other recommended packages:
+
+- [ocaml-merlin] For autocompletion, type error info
+- [reason-refmt] For Reason code formatting on save
+
+With nuclide
 ```sh
-apm install language-reason reason-refmt ocaml-merlin linter
-opam install reason merlin
+apm install language-reason linter-refmt
 ```
 
-[language-reason]: https://atom.io/packages/language-reason
+Without nuclide
+```sh
+apm install language-reason linter-refmt linter
+```
+
 [refmt]: https://facebook.github.io/reason/tools.html#refmt
+[linter]: https://atom.io/packages/linter
+[nuclide]: https://atom.io/packages/nuclide
+[language-reason]: https://atom.io/packages/language-reason
+[reason-cli]: https://github.com/reasonml/reason-cli#1-install-reason-cli-globally
 [ocaml-merlin]: https://atom.io/packages/ocaml-merlin
+[reason-refmt]: https://atom.io/packages/reason-refmt
