@@ -1,4 +1,4 @@
-# linter-refmt
+# linter-refmt ![build status badge](https://api.travis-ci.org/jsdf/atom-linter-refmt.svg?branch=master)
 
 _Use [refmt] to display syntax error messages for your Reason code in Atom._
 
