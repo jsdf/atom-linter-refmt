@@ -9,14 +9,14 @@
     "format",
     "refmt"
   ],
-  "activationHooks": [
-    "language-reason:grammar-used",
-    "nuclide-language-reason:grammar-used"
-  ],
   "repository": "https://github.com/jsdf/atom-linter-refmt",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "scripts": {
+    "flow": "flow",
+    "test": "flow && jest"
   },
   "providedServices": {
     "linter": {
@@ -32,5 +32,12 @@
       "default": "refmt",
       "order": 1
     }
+  },
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "babel-preset-es2015": "^6.24.1",
+    "flow-bin": "^0.48.0",
+    "jest": "^20.0.4",
+    "regenerator-runtime": "^0.10.5"
   }
 }

@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`multiple errors 1`] = `
+Array [
+  Object {
+    "range": Array [
+      Array [
+        0,
+        2,
+      ],
+      Array [
+        0,
+        10,
+      ],
+    ],
+    "text": "Error 321: Expecting an statement:
+A
+  b",
+    "type": "Error",
+  },
+  Object {
+    "range": Array [
+      Array [
+        15,
+        34,
+      ],
+      Array [
+        15,
+        35,
+      ],
+    ],
+    "text": "Error 890: Expecting an expression",
+    "type": "Error",
+  },
+]
+`;
+
+exports[`single error 1`] = `
+Array [
+  Object {
+    "range": Array [
+      Array [
+        15,
+        34,
+      ],
+      Array [
+        15,
+        35,
+      ],
+    ],
+    "text": "Error 890: Expecting an expression",
+    "type": "Error",
+  },
+]
+`;
+
+exports[`warning + error 1`] = `
+Array [
+  Object {
+    "range": Array [
+      Array [
+        15,
+        33,
+      ],
+      Array [
+        15,
+        35,
+      ],
+    ],
+    "text": "Error 2: this is not the end of a comment.",
+    "type": "Warning",
+  },
+  Object {
+    "range": Array [
+      Array [
+        15,
+        34,
+      ],
+      Array [
+        15,
+        35,
+      ],
+    ],
+    "text": "Error 890: Expecting an expression",
+    "type": "Error",
+  },
+]
+`;
