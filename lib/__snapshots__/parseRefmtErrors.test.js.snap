@@ -67,7 +67,7 @@ Array [
         35,
       ],
     ],
-    "text": "Error 2: this is not the end of a comment.",
+    "text": "Warning 2: this is not the end of a comment.",
     "type": "Warning",
   },
   Object {
