@@ -35,6 +35,25 @@ A
 ]
 `;
 
+exports[`no level 1`] = `
+Array [
+  Object {
+    "range": Array [
+      Array [
+        19,
+        7,
+      ],
+      Array [
+        19,
+        8,
+      ],
+    ],
+    "text": "A type's name need to begin with a lower-case letter or _",
+    "type": "Error",
+  },
+]
+`;
+
 exports[`single error 1`] = `
 Array [
   Object {
